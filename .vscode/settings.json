@@ -1,18 +1,18 @@
 {
-    "biome.enabled": true,
-    "editor.formatOnSave": true,
-    "explorer.fileNesting.patterns": {
-        "flake.nix": "*.nix, flake.lock, .envrc, .tool-versions",
-        "package.json": " pnpm-lock.yaml, tsconfig.json, .gitignore"
-    },
-    "files.exclude": {
-        ".direnv": true
-        // "@girs": true,
-        // "node_modules": true
-    },
-    "terminal.integrated.defaultProfile.linux": "fish-fhs",
-    "terminal.integrated.profiles.linux": {
-        "fish-fhs": {
+  "biome.enabled": true,
+  "editor.formatOnSave": true,
+  "explorer.fileNesting.patterns": {
+    "flake.nix": "*.nix, flake.lock, .envrc, .tool-versions",
+    "package.json": " pnpm-lock.yaml, tsconfig.json, .gitignore, biome.jsonc"
+  },
+  "files.exclude": {
+    ".direnv": true,
+    // "@girs": true,
+    "node_modules": true
+  },
+  "terminal.integrated.defaultProfile.linux": "fish-fhs",
+  "terminal.integrated.profiles.linux": {
+    "fish-fhs": {
             "args": [
                 "--user",
                 "--pty",
@@ -21,8 +21,8 @@
                 "--service-type=exec",
                 "fish"
             ],
-            "path": "systemd-run"
-        }
-    },
-    "typescript.tsdk": "./node_modules/typescript/lib"
+      "path": "systemd-run"
+    }
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib"
 }

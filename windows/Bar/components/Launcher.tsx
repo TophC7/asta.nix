@@ -1,10 +1,9 @@
-
-import { GLib } from "astal";
+import { GLib } from 'astal'
 
 export default function Launcher() {
-    return (
-        <button cssName="barauncher">
-            <image iconName={GLib.get_os_info("LOGO") || "missing-symbolic"} />
-        </button>
-    );
+  return (
+    <button cssName="barauncher">
+      <image iconName={GLib.get_os_info('LOGO') || 'missing-symbolic'} />
+    </button>
+  )
 }

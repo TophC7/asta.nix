@@ -53,7 +53,7 @@
         ags-watch = pkgs.writeScriptBin "ags-watch" ''
           #!${pkgs.fish}/bin/fish
 
-          ls **.tsx | ${pkgs.lib.getExe pkgs.entr} -r ags run -d ./ --gtk4
+          ls **.{tsx,ts,scss,css} | ${pkgs.lib.getExe pkgs.entr} -r ags run -d ./ --gtk4
         '';
       };
 
